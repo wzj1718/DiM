@@ -1,0 +1,6 @@
+dataset_path: "multilingual-llava-bench-in-the-wild/"
+test_split: es
+dataset_kwargs:
+    token: True
+task: "multilingual_llava_bench_spanish"
+include: _default_template.yaml

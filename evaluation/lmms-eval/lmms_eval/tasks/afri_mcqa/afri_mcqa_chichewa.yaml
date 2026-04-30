@@ -1,0 +1,29 @@
+dataset_path: Afri-MCQA
+dataset_name: Chichewa_dev
+dataset_kwargs:
+  token: True
+task: "afri_mcqa_chichewa"
+test_split: dev
+output_type: generate_until
+process_docs: !function utils.afri_mcqa_process_docs
+doc_to_visual: !function utils.afri_mcqa_doc_to_visual
+doc_to_text: !function utils.afri_mcqa_doc_to_text
+doc_to_target: !function utils.afri_mcqa_doc_to_target
+generation_kwargs:
+  max_new_tokens: 4
+  temperature: 0
+  top_p: 1.0
+  num_beams: 1
+  do_sample: false
+process_results: !function utils.afri_mcqa_process_results
+metric_list:
+  - metric: afri_mcqa_acc
+    aggregation: mean
+    higher_is_better: true
+metadata:
+  - version: 0.0
+model_specific_prompt_kwargs:
+  default:
+    prompt_suffix: "\nAnswer:"
+  qwen_vl:
+    prompt_suffix: " Answer:"

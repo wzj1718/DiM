@@ -1,0 +1,18 @@
+group: afri_mcqa_en
+task:
+  - afri_mcqa_akan_twi_en
+  - afri_mcqa_amharic_en
+  - afri_mcqa_chichewa_en
+  - afri_mcqa_hausa_en
+  - afri_mcqa_igbo_en
+  - afri_mcqa_kikuyu_en
+  - afri_mcqa_kinyarwanda_en
+  - afri_mcqa_lingala_en
+  - afri_mcqa_luganda_en
+  - afri_mcqa_oromo_en
+  - afri_mcqa_sesotho_en
+  - afri_mcqa_setswana_en
+  - afri_mcqa_somali_en
+  - afri_mcqa_tigrinya_en
+  - afri_mcqa_yoruba_en
+  - afri_mcqa_zulu_en
